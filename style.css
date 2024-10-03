@@ -1,0 +1,105 @@
+
+/* Basic styles */
+body {
+  font-family: 'Fredoka One', cursive;
+  background: linear-gradient(to bottom right, #ffcccb, #f3e5ab);
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.container {
+  text-align: center;
+  padding: 2rem;
+}
+
+header {
+  margin-bottom: 2rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #333;
+}
+
+h2 {
+  color: #555;
+}
+
+.profile-pic {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.profile-pic:hover {
+  transform: scale(1.1);
+}
+
+/* Bio section */
+.bio {
+  background-color: #ffffffdd;
+  border-radius: 10px;
+  padding: 1rem;
+  margin-bottom: 2rem;
+}
+
+/* Music section */
+.music {
+  background-color: #f9f9f9;
+  padding: 1.5rem;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+}
+
+.track {
+  margin: 1.5rem 0;
+}
+
+audio {
+  width: 100%;
+  outline: none;
+}
+
+/* Social Links */
+.social-links {
+  margin-top: 1rem;
+}
+
+.social-icons a {
+  margin: 0 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.social-icons a img {
+  width: 40px;
+  height: 40px;
+}
+
+.social-icons a:hover {
+  transform: rotate(15deg) scale(1.2);
+}
+
+/* Soothing animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes moveUp {
+  0% {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
